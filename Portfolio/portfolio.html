@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+
+<div class="hero">
+    <nav>
+        <img src="images/logo.png" class="logo">
+        <input type="checkbox" name="check" id="check">
+        <label for="check" class="checkBtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#home">ABOUT</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a href="#">SERVICE</a></li>
+            <li><a href="#">HIRE ME</a></li>
+        </ul>
+   
+        <img src="images/moon-solid.svg" id="icon"> 
+
+    </nav>
+  <section id="home">
+    <div class="info">
+        <h1>I'm <br> <span>Jubayer</span> Fahim</h1>
+        <p>This is my official portfolio website to showcase my all works related to <br> web development and ui design</p>
+        <a href="#">Download CV</a>
+    </div>
+
+    <div class="img-bx">
+        <img src="images/pattern.png" class="bg-imgbx">
+        <img src="images/bg_1.png" class="main-imgbx">
+    </div>
+    <!--
+  <div class="socialIcon">
+    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    <a href="#"><i class="fa-brands fa-github"></i></a>
+  </div>-->
+</div>
+  </section>
+<script>
+var icon = document.getElementById("icon");
+
+icon.onclick = function(){
+    document.body.classList.toggle('dark-theme');
+    if(document.body.classList.contains('dark-theme')){
+    icon.src= "images/sun-solid.svg";
+    localStorage.setItem("theme, dark");
+}else{
+    icon.src = "images/moon-solid.svg";
+    localStorage.setItem("theme, light");
+}
+};
+</script>
+</body>
+</html>

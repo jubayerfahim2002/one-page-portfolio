@@ -1,0 +1,79 @@
+
+/*Media */
+
+@media (max-width:700px) {
+    .hero {
+        width: 100%;
+        overflow: hidden;
+        height: 75vh;
+    }
+    
+    .hero nav {
+        width: 100%;
+    }
+    
+    img.logo {
+        width: 20%;
+        position: fixed;
+        left: 16px;
+    }
+    label.checkBtn {
+        display: block;
+        position: relative;
+        left: 580px;
+        font-size: 50px;
+    }
+    
+    .hero nav ul {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        margin-left: -200%;
+        top: 54px;
+        transition: all 0.9s;
+    }
+    
+    .hero nav ul li {
+        line-height: 30px;
+        clear: both;
+        margin-top: 15px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    img#icon {
+        position: relative;
+        right: 10px;
+    }
+    .info {
+        margin-left: 20px;
+        margin-top: 60px;
+    }
+    
+    .info h1 {
+        font-size: 50px!important;
+        position: relative;
+        top: 20px;
+    }
+    
+    .info p {
+        font-size: 21px !important;
+        position: relative;
+        top: 30px;
+    }
+    
+    .info a {
+        font-size: 24px;
+        top: 40px;
+        position: relative;
+    }
+
+.img-bx {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    top: 0;
+}
+
+ }

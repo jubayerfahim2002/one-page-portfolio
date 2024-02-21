@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#icon{
+    width: 30px;
+    cursor: pointer;
+}
+ .fa-solid{
+    color: var(--secendary-color);
+    font-size: 30px;
+}
+:root{
+  --primary-color: #edf2fc;
+    --secendary-color:#212121;
+    --hover-color: #0095ff;
+    
+}
+.dark-theme{
+    --primary-color: #000000;
+    --secendary-color:#f3f3f3;
+}
+.hero{
+    width: 100%;
+    height: auto;
+    background: var(--primary-color);
+    position: relative;
+    font-family: sans-serif;
+}
+nav ul{
+    flex: 1;
+   text-align: right;
+}
+
+nav{
+    width: 84%;
+    margin: auto;
+    padding: 20PX 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+ nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #606163;
+}
+nav ul li a:hover{
+    color: #ff474d;
+}
+   .info{
+    margin-left: 8%;
+    margin-top: 15%;
+   }
+   .info h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+   color: var(--secendary-color);   
+}
+label.checkBtn {
+    font-size: 30px;
+    color: #ff4321;
+    display: none;
+}
+
+input#check {
+    display: none;
+}
+.info h1 span {
+    color: #ff4321;
+}
+.info  p{
+    color: #606163;
+    line-height: 22px;
+}
+.info a{
+    background:var(--secendary-color);
+    padding: 10px 18px;
+    text-decoration: none;
+    color: var(--primary-color);
+    display: inline-block;
+    margin:30px 0;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.info a::after{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 0%;
+height: 100%;
+background: var(--hover-color);
+z-index: -1;
+border-radius: 5px;
+transition: all 1s;
+}
+
+.info a:hover::after{
+    width: 100%;
+}
+
+ .img-bx{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+}
+.img-bx img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.img-bx:hover .bg-imgbx{
+    bottom: 40px;
+}
+.img-bx:hover .main-imgbx{
+    left: 54%;
+}
+/* 
+ .socialIcon{
+    margin-left: 8%;
+    margin-top: 100px;
+}
+.socialIcon a{
+    font-size: 30px;
+    margin-right: 20px;
+   color: #606163;
+}
+.socialIcon a:hover{
+    color: #ff4321;
+}
+*/
